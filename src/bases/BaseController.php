@@ -1,10 +1,10 @@
 <?php
 declare (strict_types = 1);
 
-namespace bases;
+namespace ruhua\bases;
 
 
-use exceptions\BaseException;
+use ruhua\exceptions\BaseException;
 use think\App;
 use think\exception\ValidateException;
 use think\Validate;

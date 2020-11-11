@@ -6,10 +6,10 @@
  * Time: 9:26
  */
 
-namespace bases;
+namespace ruhua\bases;
 
 
-use exceptions\BaseException;
+use ruhua\exceptions\BaseException;
 use think\facade\Log;
 use think\facade\Request;
 
