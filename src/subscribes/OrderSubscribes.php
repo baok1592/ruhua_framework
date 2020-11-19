@@ -6,7 +6,7 @@
  * Time: 10:09
  */
 
-namespace ruhua\subscribes;
+namespace  ruhua\subscribes;
 
 use app\model\Goods as GoodsModel;
 use app\model\Order as OrderModel;

@@ -1,6 +1,6 @@
 <?php
 
-namespace ruhua\traits;
+namespace  ruhua\traits;
 
 trait BaseTrait
 {

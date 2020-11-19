@@ -6,7 +6,7 @@
  * Time: 9:33
  */
 
-namespace ruhua\exceptions;
+namespace  ruhua\exceptions;
 
 
 class UserException extends BaseException

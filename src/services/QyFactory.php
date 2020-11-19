@@ -1,8 +1,8 @@
 <?php
 
-namespace ruhua\services;
+namespace  ruhua\services;
 
-use ruhua\exceptions\BaseException;
+use  ruhua\exceptions\BaseException;
 use think\Exception;
 
 //策略模式工厂

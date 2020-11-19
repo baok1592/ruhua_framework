@@ -1,8 +1,9 @@
 <?php
 
-namespace ruhua\bases;
+namespace  ruhua\bases;
 
-use ruhua\exceptions\BaseException;
+use  ruhua\exceptions\BaseException;
+use  ruhua\exceptions\ProductException;
 use think\facade\Request;
 use think\Validate;
 

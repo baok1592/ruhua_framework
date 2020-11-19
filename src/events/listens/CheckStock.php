@@ -1,9 +1,9 @@
 <?php
 
-namespace ruhua\events\listens;
+namespace  ruhua\events\listens;
 
 use app\model\Goods as GoodsModel;
-use exceptions\OrderException;
+use  ruhua\exceptions\OrderException;
 
 class CheckStock
 {

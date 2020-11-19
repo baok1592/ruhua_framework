@@ -1,8 +1,8 @@
 <?php
 
-namespace ruhua\services;
+namespace  ruhua\services;
 use app\services\AccessToken;
-use ruhua\bases\BaseCommon;
+use  ruhua\bases\BaseCommon;
 use think\Exception;
 use think\facade\Cache;
 use think\facade\Log;
@@ -12,20 +12,17 @@ class LivePlayer
     /**
      * 获取直播列表的微信接口
      */
-    protected $live_list_url = 'https://api.weixin.qq.com/wxa/business/getliveinfo?access_token=%s';
+    protected $live_list_url = 'http://api.weixin.qq.com/wxa/business/getliveinfo?access_token=%s';
 
-    protected function AccessToken()
-    {
+    protected function AccessToken() {
         $a = (new AccessToken)->getXcx();
         $access_token = $a['access_token'];
         $this->live_list_url = sprintf($this->live_list_url, $access_token);//把百分号（%）符号替换成一个作为参数进行传递的变量：
     }
-
     /**
      * 获取直播列表信息
      */
-    public function get_list(int $page)
-    {
+    public function get_list(int $page)    {
         if($page>10){
             return;
         }

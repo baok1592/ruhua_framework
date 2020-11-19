@@ -6,7 +6,7 @@
  * Time: 11:16
  */
 
-namespace ruhua\utils;
+namespace  ruhua\utils;
 
 
 use app\model\SysConfig;

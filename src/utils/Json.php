@@ -1,8 +1,9 @@
 <?php
 
-namespace ruhua\utils;
+namespace  ruhua\utils;
 
 use think\Response;
+use app\model\SysConfig;
 
 class Json
 {
@@ -24,6 +25,7 @@ class Json
         return Response::create($res, 'json', $this->code);
     }
 
+    //常用返回,值为字符串默认是失败
     public function go($data): Response
     {
         if(is_array($data)){
@@ -67,6 +69,11 @@ class Json
         }
 
         return $this->make(400, $msg, $data);
+    }
+
+    public function getValue($key){
+        $value=SysConfig::where('key',$key)->value('value');
+        return $value;
     }
 
 }

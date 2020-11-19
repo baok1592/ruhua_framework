@@ -1,5 +1,5 @@
 <?php
-namespace ruhua\events;
+namespace  ruhua\events;
 
 
 

@@ -1,5 +1,5 @@
 <?php
-namespace ruhua\subscribes;
+namespace  ruhua\subscribes;
 
 
 class User

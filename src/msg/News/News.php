@@ -18,7 +18,7 @@ class News extends BaseController
         $da= input('get.');
         $data = [
            'uid'=>$da['uid'],
-           'msg'=> $da['msg'],。
+           'msg'=> $da['msg'],
         ];
         $res = NewsModel::create($data);
         return app('json')->go($res);

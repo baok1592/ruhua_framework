@@ -6,7 +6,7 @@
  * Time: 13:24
  */
 
-namespace ruhua\events\listens;
+namespace  ruhua\events\listens;
 
 
 use app\model\PointsConfig;

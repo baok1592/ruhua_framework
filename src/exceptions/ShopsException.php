@@ -1,13 +1,17 @@
 <?php
-
+/**
+ * Created by 如花商城-多商户系统
+ * User: 黔域科技
+ * QQ群: 728615087
+ */
 
 namespace  ruhua\exceptions;
 
 
-class ProductException extends BaseException
+class ShopsException extends BaseException
 {
-    public $code = 404;
-    public $msg = '指定商品不存在，请检查商品ID';
+    public $code = 400;
+    public $msg = '商家端错误';
     public $errorCode = 1000;
 
     public function __construct($params = []){
